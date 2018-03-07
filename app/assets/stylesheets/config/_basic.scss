@@ -12,5 +12,13 @@ body {
 }
 
 //各種btnなどのパーツに関するcssを記述
+#header>.content,
+#footer>.content,
+#main>.content {
+    max-width: 900px;
+    min-width: 0;
+    margin: 0 auto;
+}
+//各種content要素は、ブラウザの幅に関わらず最大で900pxになるよう設定
 
 

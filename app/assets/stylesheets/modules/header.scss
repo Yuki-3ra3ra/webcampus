@@ -1,0 +1,42 @@
+header {
+  height:70px;
+  background-color: $theme;
+  //color:#fff; 削除?
+  //box-sizing: border-box; 削除?
+  .content{
+    position: relative;
+    height:100%;
+    .logo-name {
+      float:left;
+      display: table;
+      //http://proengineer.internous.co.jp/content/columnfeature/6190
+      //親要素にdisplay: table;,子要素にdisplay: table-cell;で横並び表示できる
+      height:100%;
+      padding:15px;
+      a{
+        display: table-cell;
+        color: #fff;
+        vertical-align: middle;
+        text-decoration: none;
+        padding: 0px 20px;
+        position: relative;
+        overflow: hidden;
+        font-size: 20px;
+      }
+    }
+    .fb_login_btn {
+      float:right;
+      display: table;
+      height:100%;
+      padding:15px;
+      @include header-btn();
+    }
+    .for_enterprise_btn {
+      float:right;
+      display: table;
+      height: 100%;
+      padding:15px;
+      @include header-btn();
+    }
+  }
+}

@@ -1,4 +1,7 @@
 @import "config/reset";
 //reset.scssは最初に読みこむ
 @import "config/colors";
+@import "mixin/mixin";
 @import "config/basic";
+@import "font-awesome";
+@import "modules/header";

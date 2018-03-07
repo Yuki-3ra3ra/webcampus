@@ -1,17 +1,17 @@
-datebase_structure
+#datebase_structure
 
 ## users table
 
 |Column|Type|Options|
 |------|----|-------|
-|email|string|null: false, unique: ture|
+|email|string|null: false, unique: true|
 |password|string|null: false,|
 |user_type|integer|null: false,|
 
 ### Association
 - has_one  :profile
 - has_many :matchings
-- has_many :plans
+- has_many :plans, through: :matchings
 - has_many :messages
 - has_many :reviews
 
@@ -20,10 +20,10 @@ datebase_structure
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: ture|
-|plantype_id|integer|null: false, foreign_key: ture|
+|user_id|integer|null: false, foreign_key: true|
+|plantype_id|integer|null: false, foreign_key: true|
 |title|string|null: false,|
-|body|test|null: false,|
+|body|text|null: false,|
 |image|text|null: false,|
 |fee|string|null: false,|
 |hours|string|null: false,|
@@ -109,7 +109,7 @@ datebase_structure
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false,unique: ture|
+|name|string|null: false,unique: true|
 
 
 ### Association
@@ -120,7 +120,7 @@ datebase_structure
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false,unique: ture|
+|name|string|null: false,unique: true|
 
 
 ### Association
@@ -131,7 +131,7 @@ datebase_structure
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false,unique: ture|
+|name|string|null: false,unique: true|
 
 
 ### Association
@@ -142,7 +142,7 @@ datebase_structure
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false,unique: ture|
+|name|string|null: false,unique: true|
 
 
 ### Association

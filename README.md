@@ -22,7 +22,7 @@
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |plantype_id|integer|null: false, foreign_key: true|
-|title|string|null: false,|
+|title|string|null: false,length: { maximum: 30 }|
 |body|text|null: false,|
 |image|text|null: false,|
 |fee|string|null: false,|

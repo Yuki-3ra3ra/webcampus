@@ -10,14 +10,11 @@
 
 ### Association
 - has_one  :profile
-- has_many :matched-users, :class_name => 'Matching', :foreign_key => 'matcheduser_id'
-- has_many :matched-plans, :through => :matched-user, :source => 'plan'
-- has_many :plans
+- has_many :posted_plans, source: :plan
+- has_many :matched_plans, through: :matchings, source: :plan
+- has_many :matchings
 - has_many :messages
 - has_many :reviews
-
-* user.plan  ...あるユーザーが作成したプラン
-* user.matchings  ...あるユーザーが作成したプラン
 
 
 ## plans table
@@ -34,7 +31,7 @@
 
 ### Association
 - has_many    :matchings
-- has_many    :matched-users,through: :matchings
+- has_many    :matched_users, through: :matchings, source: :user
 - has_many    :messages
 - has_many    :reviews
 - belongs_to  :plantype
@@ -45,12 +42,12 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|matcheduser_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
 |plan_id|integer|null: false, foreign_key: true|
 |approve|string||
 
 ### Association
-- belongs_to :matched-user :class_name => 'User'
+- belongs_to :user
 - belongs_to :plan
 
 

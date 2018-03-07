@@ -12,6 +12,7 @@
 - has_one  :profile
 - has_many :matchings
 - has_many :plans, through: :matchings
+- has_many :plans,foreign_key => 'student_id'
 - has_many :messages
 - has_many :reviews
 
@@ -20,7 +21,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
+|student_id|integer|null: false, foreign_key: true|
 |plantype_id|integer|null: false, foreign_key: true|
 |title|string|null: false,length: { maximum: 30 }|
 |body|text|null: false,|

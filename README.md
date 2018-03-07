@@ -91,7 +91,7 @@ datebase_structure
 |birthmonth|integer|null: false|
 |university_id|integer|null: false, foreign_key: true|
 |faculty_id|interger|null: false, foreign_key: true|
-|admission-type_id|string|null: false, foreign_key: true|
+|admission-type_id|interger|null: false, foreign_key: true|
 |club|text||
 |introduction|text||
 |region_id|interger|null: false, foreign_key: true|

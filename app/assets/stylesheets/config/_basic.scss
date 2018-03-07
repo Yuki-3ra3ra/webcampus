@@ -22,3 +22,16 @@ body {
 //各種content要素は、ブラウザの幅に関わらず最大で900pxになるよう設定
 
 
+//register-barなどで使用するボタン
+.g_button {
+    display: inline-block;
+    padding: 12px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+

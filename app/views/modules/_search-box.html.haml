@@ -1,0 +1,86 @@
+%form{"accept-charset" => "UTF-8", :action => "", :method => "get"}
+  %input{name: "utf8", type: "hidden", value: "✓"}/
+  .form_row
+    %fieldset.field
+      %legend.label
+        %i
+        = fa_icon 'university'
+        %span{class: "schoolname"} 学校名
+      %a.sp_label{href: "#fw"}
+        %i
+        = fa_icon 'university'
+        %span{class: "schoolname"} 学校名
+      .content
+        %input#search_fw{name: "search[fw]", placeholder: "例）◯◯大学", type: "text"}/
+  .form_row
+    %fieldset.field
+      %legend.label
+        %i
+        = fa_icon 'graduation-cap'
+        %span{class: "faculty"} 学部系統
+      %a.sp_label{href: "#bid"}
+        %i
+        = fa_icon 'graduation-cap'
+        %span{class: "faculty"} 学部系統
+      .content
+        .custom_check_box.normal
+          %input#search_bid_1.custom_check{name: "search[bid][]", type: "checkbox", value: "1"}/
+          %label{for: "search_bid_1"} 経営・経済・商学系
+          %input#search_bid_2.custom_check{name: "search[bid][]", type: "checkbox", value: "2"}/
+          %label{for: "search_bid_2"} 法律・政治系
+          %input#search_bid_3.custom_check{name: "search[bid][]", type: "checkbox", value: "3"}/
+          %label{for: "search_bid_3"} 社会・情報系
+          %input#search_bid_4.custom_check{name: "search[bid][]", type: "checkbox", value: "4"}/
+          %label{for: "search_bid_4"} 国際関係
+          %input#search_bid_5.custom_check{name: "search[bid][]", type: "checkbox", value: "5"}/
+          %label{for: "search_bid_5"} 文学・人文・人間系
+          %input#search_bid_6.custom_check{name: "search[bid][]", type: "checkbox", value: "6"}/
+          %label{for: "search_bid_6"} 外国語系
+          %input#search_bid_7.custom_check{name: "search[bid][]", type: "checkbox", value: "7"}/
+          %label{for: "search_bid_7"} 教育・福祉系
+          %input#search_bid_8.custom_check{name: "search[bid][]", type: "checkbox", value: "8"}/
+          %label{for: "search_bid_8"} 理・工系
+          %input#search_bid_9.custom_check{name: "search[bid][]", type: "checkbox", value: "9"}/
+          %label{for: "search_bid_9"} 農・獣・畜産・水産系
+          %input#search_bid_10.custom_check{name: "search[bid][]", type: "checkbox", value: "10"}/
+          %label{for: "search_bid_10"} 医・歯・薬系
+          %input#search_bid_11.custom_check{name: "search[bid][]", type: "checkbox", value: "11"}/
+          %label{for: "search_bid_11"} 看護・保健・衛生系
+          %input#search_bid_12.custom_check{name: "search[bid][]", type: "checkbox", value: "12"}/
+          %label{for: "search_bid_12"} 家政・生活系
+          %input#search_bid_13.custom_check{name: "search[bid][]", type: "checkbox", value: "13"}/
+          %label{for: "search_bid_13"} 芸術・表現系
+          %input#search_bid_14.custom_check{name: "search[bid][]", type: "checkbox", value: "14"}/
+          %label{for: "search_bid_14"} 体育・健康系
+          %input#search_bid_15.custom_check{name: "search[bid][]", type: "checkbox", value: "15"}/
+          %label{for: "search_bid_15"} 教養・総合系
+          %input#search_bid_16.custom_check{name: "search[bid][]", type: "checkbox", value: "16"}/
+
+  .form_row
+    %fieldset.field
+      %legend.label
+        %i
+        = fa_icon 'pencil'
+        %span{class: "admission_process"} 受験方式
+      %a.sp_label{href: "#pid"}
+        %i
+        = fa_icon 'pencil'
+        %span{class: "admission_process"} 受験方式
+      .content
+        .custom_check_box.normal
+          %input#search_oid_1.custom_check{name: "search[oid][]", type: "checkbox", value: "1"}/
+          %label{for: "search_oid_1"} 一般入試
+          %input#search_oid_2.custom_check{name: "search[oid][]", type: "checkbox", value: "2"}/
+          %label{for: "search_oid_2"} 推薦入試
+          %input#search_oid_3.custom_check{name: "search[oid][]", type: "checkbox", value: "3"}/
+          %label{for: "search_oid_3"} AO入試
+          %input#search_oid_4.custom_check{name: "search[oid][]", type: "checkbox", value: "4"}/
+          %label{for: "search_oid_4"} 指定校推薦
+          %input#search_oid_5.custom_check{name: "search[oid][]", type: "checkbox", value: "5"}/
+          %label{for: "search_oid_5"} その他
+
+  .form_row
+    %button.submit_btn.button{name: "button", type: "submit"}
+      %i
+      = fa_icon 'search'
+      %span{class: "search"} 検索

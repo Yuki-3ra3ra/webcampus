@@ -50,6 +50,18 @@
           }
         }
       }
+
+      .g_section_title:first-of-type {
+        padding-top: 350px;
+      }
+
+      .g_section_title {
+        padding: 5px 0 12px 0;
+        font-size: 20px;
+        padding-top: 30px;
+
+        @include fa();
+      }
     }
   }
 }

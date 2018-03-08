@@ -6,7 +6,7 @@
   //box-shadow:横方向 縦方向 (ぼかし) (広がり) (影の色) (影の向き);
   //ぼかしと広がりを入れてる
   overflow: hidden;
-  .g_form_row{
+  .form_row{
     margin: 0 10px 15px;
     margin-bottom: 10px;
     fieldset {
@@ -30,7 +30,7 @@
       .sp_label {
         display: none;
       }
-      .g_content {
+      .content {
         display: block !important;
         input[type=text],{
           width: 100%;
@@ -53,15 +53,15 @@
     }
   }
   //学校名の検索
-  .g_form_row {
-    .g_custom_check_box.normal {
+  .form_row {
+    .custom_check_box.normal {
       margin-bottom: -8px;
-      .g_custom_check{
+      .custom_check{
         display: none;
         //inputformのclass。これで通常のボタンを隠す
         margin: 0;
       }
-      .g_custom_check + label {
+      .custom_check + label {
           padding: 0 0 0 24px;
           position: relative;
           display: inline-block;
@@ -71,7 +71,7 @@
           font-weight: 300;
         margin-bottom: 10px;
       }
-      .g_custom_check + label::before {
+      .custom_check + label::before {
         content: "";
         position: absolute;
         top: 50%;
@@ -86,7 +86,7 @@
         background-color: white;
         border: 2px solid #dadada;
       }
-      .g_custom_check:checked + label::after {
+      .custom_check:checked + label::after {
         content: "";
         //content:""入れたらcheckes認識した！
         position: absolute;
@@ -106,7 +106,7 @@
     }
   }
   //検索欄はここまで
-  .g_form_row {
+  .form_row {
     .submit_btn {
       background-color: #fff;
       border-radius: 4px;

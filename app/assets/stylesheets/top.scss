@@ -10,7 +10,7 @@
         right: 0;
         #eyecatch {
         @include eyecatch_image();
-          .g_table{
+          .table{
             height: 100%;
             max-width: 900px;
             margin: 0 auto;
@@ -18,7 +18,7 @@
             position: relative;
             display: table;
             width: 100%;
-            .g_cell {
+            .cell {
               display: table-cell;
               vertical-align: middle;
               h1{
@@ -51,11 +51,11 @@
         }
       }
 
-      .g_section_title:first-of-type {
+      .section_title:first-of-type {
         padding-top: 350px;
       }
 
-      .g_section_title {
+      .section_title {
         padding: 5px 0 12px 0;
         font-size: 20px;
         padding-top: 30px;

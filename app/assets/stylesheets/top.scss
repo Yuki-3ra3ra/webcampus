@@ -62,6 +62,12 @@
 
         @include fa();
       }
+      section.white_panel {
+        background-color: #fff;
+        padding: 15px;
+        box-shadow: 0px 0px 3px 1px rgba(0,0,120,0.1);
+        overflow: hidden;
+      }
     }
   }
 }

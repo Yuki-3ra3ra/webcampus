@@ -44,6 +44,52 @@
 }
 
 
+//footerのボトムを指定することで、regster-barの最下部の位置を決める
 @mixin bar-position(){
   bottom: 90px;
 }
+
+
+//plna-listの写真に関するstyle
+@mixin user_image(){
+  .user_image{
+    display: inline-block;
+    background: #ddd;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: 2px solid #eee;
+    vertical-align: middle;
+    border-color: $pic-border;
+  }
+}
+
+//3分割のテーブル全体に関するstyle
+@mixin td(){
+  td {
+    color: $tdfont;
+    font-size: 12px;
+    height: 23px;
+    overflow: hidden;
+    padding: 0 3px;
+    text-align: center;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 33.3%;
+  }
+}
+
+@mixin raitingimage() {
+
+  //img.rating-image {
+  //  height: 22px;
+  //  width: 22px;
+  //  margin-right: 9px;
+  //}
+  //挿入する星画像がないため、一旦適用を制限
+}
+
+
+
+

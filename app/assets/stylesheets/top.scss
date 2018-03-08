@@ -1,3 +1,55 @@
-// Place all the styles related to the top controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+#main {
+  padding-bottom: 106px;
+  .content{
+    #root_index{
+      padding-bottom: 10px;
+      #hero_carousel{
+        height: 320px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        #eyecatch {
+        @include eyecatch_image();
+          .g_table{
+            height: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            display: table;
+            width: 100%;
+            .g_cell {
+              display: table-cell;
+              vertical-align: middle;
+              h1{
+                font-size: 30px;
+                font-weight: 300;
+                margin-top: 16.08px;
+                margin-bottom: 16.08px;
+              }
+              h2{
+                font-size: 40px;
+                font-family: "ヒラギノ明朝 ProN W6","HiraMinProN-W6","HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝";
+                margin-start: 24.9px;
+                  -webkit-margin-after: 24.9px;
+                margin-before: 24.9px;
+                  -webkit-margin-before: 24.9px;
+              }
+                %span {
+                  display: inline-block;
+                }
+              p{
+                line-height: 2;
+                margin-start: 26px;
+                  -webkit-margin-after: 26px;
+                margin-before: 26px;
+                  -webkit-margin-before: 26px;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

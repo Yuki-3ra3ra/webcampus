@@ -12,7 +12,6 @@ body {
 }
 
 //各種btnなどのパーツに関するcssを記述
-
 //各種content要素は、ブラウザの幅に関わらず最大で900pxになるよう設定
 #header>.content,
 #footer>.content,
@@ -21,11 +20,6 @@ body {
     min-width: 0;
     margin: 0 auto;
 }
-
-
-
-
-
 
 //register-barなどで使用するボタン
 .g_button {

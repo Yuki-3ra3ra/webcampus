@@ -42,3 +42,8 @@
     margin-right: 7px;
   }
 }
+
+
+@mixin bar-position(){
+  bottom: 90px;
+}

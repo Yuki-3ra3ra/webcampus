@@ -1,0 +1,54 @@
+//headerを呼び出す
+= render "modules/header"
+
+#main
+  .content
+
+    #register_bar
+      = render "modules/register-bar"
+
+    #root_index
+      %section#hero_carousel
+        #eyecatch
+          .table
+            .cell
+              %h1
+                サービス説明
+              %h2
+                %span
+                  キャッチ
+                %span
+                  フレーズ
+              %p
+                ◯◯に
+                %br
+                何でも相談できるサービスです
+
+      .section_title
+        %i
+        = fa_icon 'check'
+        %span
+          条件から探す
+
+      %section#search_box.student_search_box
+        = render "modules/search-box"
+
+      .section_title
+        = fa_icon 'check'
+        %span
+          先輩達を見てみる
+
+      %section#obog_list
+        = render "modules/plan-list"
+
+      .section_title
+        = fa_icon 'check'
+        %span
+          Web Campusをご利用いただくにあたり
+
+      %section.white_panel#about_webcampus
+        テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト
+
+
+%footer#footer
+  = render "modules/footer"

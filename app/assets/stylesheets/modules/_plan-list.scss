@@ -1,0 +1,208 @@
+section{
+  .students {
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -o-transition: 0.7s;
+    transition: 0.7s;
+    .layout-wrapper {
+      margin: 0px -11px;
+      .layout-container {
+        display: table;
+        width: 100%;
+        table-layout: fixed;
+        .layout-column{
+          width: 33.3%;
+          //planの幅を決めている
+          padding: 0px 11px;
+          .layout-cell {
+            display: block;
+            margin-bottom: 22px;
+            .student>.info>div {
+              display: table-cell;
+              vertical-align: middle;
+            }
+            .student>div {
+              background-color: $student-plan;
+            }
+            .student {
+              box-shadow: 0 0 3px 1px rgba(0,0,120,0.1);
+              border: 1px solid #ddd;
+              table {
+                padding: 0;
+                width: 100%;
+                //border-collapse: collapse;
+                //https://itsakura.com/css-border-collapse
+                border: 0px;
+                table-layout: fixed;
+                tbody {
+                  tr {
+                    @include td();
+
+                    td.prefecture {
+                      background-color: $prefecture;
+                    }
+                    td.faculity {
+                      background-color: $faculity;
+                    }
+                    td.admission_process {
+                      background-color:  $admission_process;
+                    }
+                  }
+
+                }
+              }
+              .info {
+                display: table;
+                .image_box {
+                  padding: 10px 15px 10px 8px;
+                  @include user_image();
+                }
+                .name_box {
+                  width: 100%;
+                  padding-right: 10px;
+                  span {
+                    display: block;
+                    width: 100%;
+                    line-height: 1.2;
+                    word-break: break-all;
+                  }
+                  .student_name{
+                    font-size: 16px;
+                    margin: 0 0 3px;
+                  }
+                  .student_university {
+                    font-size: 12px;
+                    margin: 0;
+                  }
+                }
+              }
+              .comment {
+                margin: 0;
+                margin-top: -2px;
+                font-size: 12px;
+                padding: 0 13px 8px;
+                line-height: 1.5;
+                box-sizing: content-box;
+                height: 34px;
+                overflow: hidden;
+                p {
+                  margin: 0;
+                  margin-top: -2px;
+                  font-size: 12px;
+                  padding: 0 10px 6px; //originalは0 13px 8px;
+                  line-height: 1.5;
+                  box-sizing: content-box;
+                  height: 34px;
+                  overflow: hidden;
+                }
+              }
+              .rating>* {
+                display: inline-block;
+                height: 22px;
+                line-height: 22px;
+                vertical-align: middle;
+                margin-right: 5px;
+              }
+              .rating {
+                padding-bottom: 10px;
+                text-align: center;
+                .star_box.rating-container {
+                  @include raitingimage();
+
+                }
+                .rating_score {
+                  color: #FFBF00;
+                  font-size: 20px;
+                }
+                .rating_count {
+                  margin-right: 0px;
+                  font-size: 16px;
+                }
+              }
+              .plans {
+                .plan {
+                  border-bottom: 1px solid #eee;
+                  position: relative;
+                  a.wrapper_link {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    right: 0;
+                    left: 0;
+                    -webkit-transition: 0.5s;
+                    -moz-transition: 0.5s;
+                    -o-transition: 0.5s;
+                    transition: 0.5s;
+                    z-index: 3;
+                  }
+                  .plan_content {
+                      padding: 25px 10px;
+                      background-color:$planpic-back;
+                      .plan_info {
+                        height: 110px;
+                        .sub{
+                          font-size: 14px;
+                          line-height: 1;
+                          color: #fff;
+                          text-shadow: 0px 0px 7px rgba(0,0,0,0.7);
+                        }
+                        .title {
+                          margin: 2px 0;
+                          font-size: 20px;
+                          word-break: break-all;
+                          font-weight: 700;
+                          line-height: 1.2;
+                          color: #fff;
+                          text-shadow: 0px 0px 7px rgba(0,0,0,0.7);
+                        }
+                      }
+                    .button {
+                      padding:10px,10px;
+                      width: 100%;
+                      border-radius: 5px;
+                      text-decoration: none;
+                      text-align: center;
+                      a {
+                        display: inline-block;
+                        padding-top:5px;
+                        padding-bottom:5px;
+                        margin-top: 12px;
+                        color: white;
+                        font-weight: 300;
+                        background-color: $moto-kuwashiku;
+                        border: 1px solid rgba(255,255,255,0.7);
+                        &:after {
+                          content: "もっと詳しく";
+                        }
+                      }
+                    }
+                  }
+
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+  .next_button {
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid $theme;
+    color: $theme;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 300;
+    //height: 45px; //これ変えるとオリジナルと会う
+    letter-spacing: 15px;
+    margin: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    letter-spacing: 1px;
+    padding: 10px;
+    text-size-adjust:100%;
+  }
+}

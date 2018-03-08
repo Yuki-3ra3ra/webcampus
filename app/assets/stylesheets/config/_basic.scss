@@ -1,0 +1,35 @@
+//bodyに関するcssを記述
+body {
+  background-color: $back;
+  min-height: 100%;
+  position: relative;
+  font-family: "游ゴシック",YuGothic,"ヒラギノ角ゴ ProN W3","Hiragino Kaku Gothic ProN","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  //http://www.htmq.com/style/line-height.shtml
+  //単位をつけずに数値のみを指定すると、その数値にフォントのサイズを掛けた値が行の高さとなる
+}
+
+//各種btnなどのパーツに関するcssを記述
+//各種content要素は、ブラウザの幅に関わらず最大で900pxになるよう設定
+#header>.content,
+#footer>.content,
+#main>.content {
+    max-width: 900px;
+    min-width: 0;
+    margin: 0 auto;
+}
+
+//register-barなどで使用するボタン
+.button {
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+

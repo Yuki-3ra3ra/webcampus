@@ -1,0 +1,59 @@
+.students{style: "opacity: 1;"}
+  .layout-wrapper{style: "margin: 0px -11px;"}
+    .layout-container
+      .layout-column
+        .layout-cell
+          .student{"data-id"=> ""}
+            %table
+              %tbody
+                %tr
+                  %td.prefecture 京都府
+                  %td.faculity   経営学部
+                  %td.admission_process 推薦入試
+            .info
+              .image_box
+                %img.user_image{alt: "", src: "https://s3-ap-northeast-1.amazonaws.com/static.matcher.jp/img/users/thumb/28699.jpg?m=1520171110"}/
+              .name_box
+                %span.student_name 佐々木雄紀
+                %span.student_university 立命館大学
+            .comment
+              %p
+                ＜学生生活＞
+                大学2年生の頃は、資格試験の勉強に励んできました。
+                その後、シアトルのUniversity of Washingtonに１年間留学
+                していました。
+
+            .rating
+              .star_box.rating-container
+                %img.rating-image{src: ""}/
+                %img.rating-image{src: ""}/
+                %img.rating-image{src: ""}/
+                %img.rating-image{src: ""}/
+                %img.rating-image{src: ""}/
+                //画像のパス指定できない
+              .rating_score 4.8
+              .rating_count (6)
+
+            .plans
+              .plan.cover_image{style: "background-image:url()"}
+                %a.wrapper_link{href: ""}
+                //planのリンクをここで！
+                .plan_content
+                  .plan_info
+                    .title 現役大学生がキャンパスを一日案内します！
+
+                  .button
+                    %a.button{href: ""}
+
+              .plan.cover_image{style: "background-image:url()"}
+                %a.wrapper_link{href: ""}
+                .plan_content
+                  .plan_info
+                    .sub
+                    .title 立命館大学のAO入試に関するコツを教えます！
+
+                  .button
+                    %a.button{href: ""}
+
+  %a.next_button{href: ""}
+    次の２０件を読み込む

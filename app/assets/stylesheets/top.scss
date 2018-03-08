@@ -1,0 +1,73 @@
+#main {
+  padding-bottom: 400px;
+  .content{
+    #root_index{
+      padding-bottom: 10px;
+      #hero_carousel{
+        height: 320px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        #eyecatch {
+        @include eyecatch_image();
+          .table{
+            height: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            display: table;
+            width: 100%;
+            .cell {
+              display: table-cell;
+              vertical-align: middle;
+              h1{
+                font-size: 30px;
+                font-weight: 300;
+                margin-top: 16.08px;
+                margin-bottom: 16.08px;
+              }
+              h2{
+                font-size: 40px;
+                font-family: "ヒラギノ明朝 ProN W6","HiraMinProN-W6","HG明朝E","ＭＳ Ｐ明朝","MS PMincho","MS 明朝";
+                margin-start: 24.9px;
+                  -webkit-margin-after: 24.9px;
+                margin-before: 24.9px;
+                  -webkit-margin-before: 24.9px;
+              }
+                %span {
+                  display: inline-block;
+                }
+              p{
+                line-height: 2;
+                margin-start: 26px;
+                  -webkit-margin-after: 26px;
+                margin-before: 26px;
+                  -webkit-margin-before: 26px;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+
+      .section_title:first-of-type {
+        padding-top: 350px;
+      }
+
+      .section_title {
+        padding: 5px 0 12px 0;
+        font-size: 20px;
+        padding-top: 30px;
+
+        @include fa();
+      }
+      section.white_panel {
+        background-color: #fff;
+        padding: 15px;
+        box-shadow: 0px 0px 3px 1px rgba(0,0,120,0.1);
+        overflow: hidden;
+      }
+    }
+  }
+}

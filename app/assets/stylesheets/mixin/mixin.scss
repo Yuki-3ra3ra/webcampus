@@ -46,7 +46,7 @@
 
 //footerのボトムを指定することで、regster-barの最下部の位置を決める
 @mixin bar-position(){
-  bottom: 90px;
+  //margin-bottom: 85px;
 }
 
 
@@ -90,6 +90,14 @@
   //挿入する星画像がないため、一旦適用を制限
 }
 
+
+@mixin clearfix() {
+    &:after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+}
 
 
 

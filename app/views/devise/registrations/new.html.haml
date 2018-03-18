@@ -34,11 +34,9 @@
           /  = f.check_box :user_type, class: "user_type", value: 2
 
 
-
-
           .actions
-            = f.label :"登録", class: "submitbtn"
-            = f.submit "登録", class: "hide"
+            = f.label :"登録", class: "submitbtn", for: "register"
+            = f.submit "登録", class: "hide", id: "register"
       //= render "devise/shared/links"
 
   %footer#footer

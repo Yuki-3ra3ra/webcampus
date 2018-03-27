@@ -25,48 +25,21 @@
         display: table-cell;
         vertical-align: middle;
         .btn {
-          color: #fff;
           font-weight: 300;
           width: 100%;
           padding: 15px 0;
+          border-radius: 5px;
+          a{
+            text-decoration: none;
+            color: #fff;
+            overflow: hidden;
+          }
         }
         .user {
           background-color: $theme;
         }
-        a.user::before {
-          content: "学校の話を聞きたい人はこちら";
-        }
-        a.user::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          left: 0;
-          -webkit-transition: 0.5s;
-          -moz-transition: 0.5s;
-          -o-transition: 0.5s;
-          transition: 0.5s;
-          background-color:rgba(255,255,255,0);
-        }
         .student {
           background-color:$theme;
-        }
-        a.student::before {
-          content: "学生はこちら";
-        }
-        a.student::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          left: 0;
-          -webkit-transition: 0.5s;
-          -moz-transition: 0.5s;
-          -o-transition: 0.5s;
-          transition: 0.5s;
-          background-color:rgba(255,255,255,0);
         }
       }
   }

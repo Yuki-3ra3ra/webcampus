@@ -1,1 +1,34 @@
-テスト
+%body
+  = render "modules/header_user"
+
+  #main
+    .content
+
+      #root_index
+        .section_title
+          %i
+          = fa_icon 'check'
+          %span
+            条件から探す
+
+        %section#search_box.student_search_box
+          = render "modules/search-box"
+
+        .section_title
+          = fa_icon 'check'
+          %span
+            先輩達を見てみる
+
+        %section#obog_list
+          = render "modules/plan-list"
+
+        .section_title
+          = fa_icon 'check'
+          %span
+            Web Campusをご利用いただくにあたり
+
+        %section.white_panel#about_webcampus
+          テストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテストテスト
+
+  %footer#footer
+    = render "modules/footer_user"
